@@ -1,10 +1,11 @@
 <nav
-    class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}"
+    class="navbar is-black {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}"
     x-data="{ openNav: false }"
 >
     <div class="container">
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item">
+                <img src="{{ site.baseurl }}/assets/favicon.svg" class="navbar-logo">
                 {{ site.title }}
             </a>
             <a
@@ -23,7 +24,6 @@
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
             <div class="navbar-start">
-                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Home</a>
                 {% if site.data.navigation %}
                     {% for item in site.data.navigation %}
                         {% if item.dropdown %}
@@ -61,7 +61,7 @@
                 {% if site.gh_sponsor %}
                     <a class="navbar-item" href="https://github.com/sponsors/{{ site.gh_sponsor }}">
                         <span class="icon gh-sponsor"><i class="fas fa-heart"></i></span>
-                        <span>Sponsor</span>
+                        <span>"{{ site.data.lang.Sponsor }}"</span>
                     </a>
                 {% endif %}
             </div>

@@ -1,0 +1,8 @@
+- title: 1º Congresso de Jovens
+  date: 2026-01-01 #YYYY-MM-DD
+  images:
+    - link:
+      large_link: 
+      alt: The alt text for the image
+      description: The image description
+      ratio: is-3by4

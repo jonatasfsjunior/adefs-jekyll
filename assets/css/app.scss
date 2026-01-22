@@ -1,5 +1,7 @@
 ---
 ---
-
-// Import Main CSS file from theme
+$body-size: 1em !default;
+$background-color: #000000;
+$footer-background-color: #000000;
+@import "navbar";
 @import "main";

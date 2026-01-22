@@ -5,7 +5,9 @@ layout: default
 
 <div class="columns is-multiline">
     <div class="column is-12">
-        {% include pagination.html %}
+        {% if paginator.total_pages > site.paginate %}
+            {% include pagination.html %}
+        {% endif %}
     </div>
     {% for post in paginator.posts %}
         <div class="column is-12">
@@ -13,7 +15,9 @@ layout: default
         </div>
     {% endfor %}
     <div class="column is-12">
-        {% include pagination.html %}
+        {% if paginator.total_pages > site.paginate %}
+            {% include pagination.html %}
+        {% endif %}
     </div>
     <div class="column is-12">
         {% include subscribe.html %}

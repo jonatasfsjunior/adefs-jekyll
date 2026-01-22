@@ -1,21 +1,9 @@
-- name: Docs
-  link: /docs/
-- name: Example Pages
-  link: /#
+- name: Início
+  link: /
+- name: Artigos
+  link: /artigos
+- name: Social
+  link: /social
   dropdown:
-    - name: Landing Page With Callouts
-      link: /landing/
-    - name: Promo Page
-      link: /promo-page/
-    - name: Sponsors Page
-      link: /sponsors/
-    - name: Image Gallery
-      link: /gallery/
-    - name: Products
-      link: /products/
-    - name: Recipe Page
-      link: /example-recipe/
-    - name: Showcase
-      link: /showcase/
-- name: Blog
-  link: /blog/
+    - name: Fotos
+      link: /midia

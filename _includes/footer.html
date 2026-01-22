@@ -1,21 +1,26 @@
 <footer class="footer">
     <div class="container">
-        {% if site.footer_menu %}
-            <div class="columns is-multiline">
-                {% for item in site.data[site.footer_menu] %}
-                    <div class="column has-text-centered">
-                        <div>
-                            <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
-
         {% include follow.html %}
 
+        <div class="columns is-vcentered">
+            <iframe
+                class="column is-5"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31190.463150557665!2d-38.99395188916016!3d-12.261275899999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71437bb693ee8eb%3A0x2915664e50ee90e5!2sIgreja%20Evang%C3%A9lica%20Assembleia%20de%20Deus%20em%20Feira%20de%20Santana%20-%20Sede!5e0!3m2!1spt-BR!2sbr!4v1767849850320!5m2!1spt-BR!2sbr"
+                width="400"
+                height="250"
+                style="border-radius: 1.5rem;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="column is-6 is-offset-1">
+                <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
+            </div>
+        </div>
+
         <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+            <h4 class="">Assembléia de Deus em Feira de Santana</h4>
         </div>
     </div>
 </footer>
